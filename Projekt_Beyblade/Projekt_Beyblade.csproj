@@ -1,0 +1,66 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+	<LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\arabbit.jpg" />
+    <None Remove="Resources\beyblade.obj" />
+    <None Remove="Resources\dragon.jpg" />
+    <None Remove="Resources\dragon2.jpg" />
+    <None Remove="Resources\dragon_boss.png" />
+    <None Remove="Resources\dragon_boss3.jpg" />
+    <None Remove="Resources\example.wav" />
+    <None Remove="Resources\field2.png" />
+    <None Remove="Resources\ground.jpg" />
+    <None Remove="Resources\ground2.jpg" />
+    <None Remove="Resources\skybox1.png" />
+    <None Remove="Resources\skybox2.png" />
+    <None Remove="Resources\skybox3.png" />
+    <None Remove="Resources\skybox4.png" />
+    <None Remove="Resources\snake_music.wav" />
+    <None Remove="Shaders\FragmentShader.frag" />
+    <None Remove="Shaders\VertexShader.vert" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\arabbit.jpg" />
+    <EmbeddedResource Include="Resources\beyblade.obj" />
+    <EmbeddedResource Include="Resources\dragon.jpg" />
+    <EmbeddedResource Include="Resources\dragon2.jpg" />
+    <EmbeddedResource Include="Resources\dragon_boss.png" />
+    <EmbeddedResource Include="Resources\dragon_boss3.jpg" />
+    <EmbeddedResource Include="Resources\example.wav" />
+    <EmbeddedResource Include="Resources\field2.png" />
+    <EmbeddedResource Include="Resources\ground.jpg" />
+    <EmbeddedResource Include="Resources\ground2.jpg" />
+    <EmbeddedResource Include="Resources\skybox1.png" />
+    <EmbeddedResource Include="Resources\skybox2.png" />
+    <EmbeddedResource Include="Resources\skybox3.png" />
+    <EmbeddedResource Include="Resources\skybox4.png" />
+    <EmbeddedResource Include="Resources\snake_music.wav" />
+    <EmbeddedResource Include="Shaders\FragmentShader.frag">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shaders\VertexShader.vert">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NAudio" Version="2.2.1" />
+    <PackageReference Include="OpenTK" Version="4.8.2" />
+    <PackageReference Include="Silk.NET" Version="2.21.0" />
+    <PackageReference Include="Silk.NET.Assimp" Version="2.21.0" />
+    <PackageReference Include="Silk.NET.OpenGL.Extensions.ImGui" Version="2.21.0" />
+    <PackageReference Include="SixLabors.ImageSharp" Version="3.1.4" />
+    <PackageReference Include="StbImageSharp" Version="2.27.14" />
+  </ItemGroup>
+
+</Project>
